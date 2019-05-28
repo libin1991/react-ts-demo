@@ -1,6 +1,9 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import logo from './logo.svg'
+import Hello from './components/Hello'
+import HelloClass from './components/Hello/HelloClass'
+
+import './App.css'
 
 const App: React.FC = () => {
   return (
@@ -19,8 +22,12 @@ const App: React.FC = () => {
           Learn React
         </a>
       </header>
+      <footer>
+        <Hello name="wuliang" enthusiasmLevel={2} />
+        <HelloClass name="Muscular man" enthusiasmLevel={10} />
+      </footer>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
